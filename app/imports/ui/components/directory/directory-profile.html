@@ -1,16 +1,12 @@
 <template name="Directory_Profile">
 
   <div class="card">
+    <div class="image">
+      <img src="{{ profile.picture }}">
+    </div>
     <div class="content">
-      <img class="right floated mini ui image" src="{{ profile.picture }}">
       <div class="header">
-        {{ profile.firstName }} {{ profile.lastName }}
-      </div>
-      <div class="meta">
-        {{ profile.title}}
-      </div>
-      <div class="meta">
-        {{ profile.location }}
+        {{ profile.firstName }}
       </div>
       <div class="description">
         {{ profile.bio }}
